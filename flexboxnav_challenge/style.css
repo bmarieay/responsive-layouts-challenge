@@ -30,6 +30,17 @@ header {
 }
 
 
+.logo{
+    margin-right: 1em;
+}
+
+.nav{
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
 .nav__list {
     margin: 0;
     padding: 0;
@@ -39,7 +50,9 @@ header {
 
 .nav__item + .nav__item{
     margin-left: 3em;
+    
 }
+
 
 .nav__link {
     color: #fff;
