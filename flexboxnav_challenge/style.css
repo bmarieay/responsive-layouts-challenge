@@ -1,0 +1,150 @@
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-size: 2.1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.hero{
+    color:#FFF;
+    background-color: #23424A;
+    padding: 5em 0;
+    margin-bottom: 6rem;
+}
+
+header {
+    background: #136c72;
+    padding: 1.25em 0;
+}
+
+
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.nav__item{
+    margin-right: 3em;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .25s;
+}
+
+.nav__link--button {
+    background: #fff;
+    color: #136c72;
+    padding: .25em 1em;
+    border:2px solid #FFF;
+    border-radius: 10em;
+}
+
+.hero__text {
+    width: 50%;
+}
+
+.hero__text h1, .article__title {
+    margin-top: 0;
+}
+
+.hero__img{
+    align-self: flex-start;
+    width:40%;
+}
+
+p {
+    line-height: 1.3em;
+    margin-bottom: 5rem;
+}
+
+.wrapper {
+    width:80%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    font-size: 2.1rem;
+    padding: .7em 1.25em;
+    border-radius: 100px;
+    color: #23424A;
+    background-color: #3fb0b8;
+    border: 2px solid #FFF;
+    transition: all .25s; 
+}
+
+
+button:hover, .nav__link:hover{
+    background-color: #246e74;
+    color:#FFF;
+    transform: translateY(-4px);
+    box-shadow: 0 .5em .5em -.4em #38CFD9;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.center{
+    text-align: center;
+}
+
+.section{
+    padding: 2rem 2.5rem;
+    color:#FFF;
+    background-color: #136C72;
+    width:40%;   
+}
+
+.section__title{
+    font-size: 3.6rem;
+}
+
+.section__description{
+    margin-bottom: 2.5rem;
+}
+
+.section__title--light{
+    color: #87629A;
+}
+
+.article{
+    width:50%;
+}
+
+.article__title{
+    font-size: 3.6rem;
+    color:#136C72;
+}
+
+
+
+
+
+
