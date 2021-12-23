@@ -32,11 +32,13 @@ header {
 
 .logo{
     margin-right: 1em;
+    transition: all .1s;
 }
+
 
 .nav{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     flex-grow: 1;
     justify-content: space-between;
 }
@@ -46,6 +48,10 @@ header {
     padding: 0;
     list-style: none;
     display: flex;
+}
+
+.nav__list--primary{
+    margin: 0 auto;
 }
 
 .nav__item + .nav__item{
@@ -58,15 +64,16 @@ header {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
-    transition: all .25s;
+
 }
 
 .nav__link--button {
     background: #fff;
     color: #136c72;
     padding: .25em 1em;
-    border:2px solid #FFF;
+    border:2px solid #23424A;
     border-radius: 10em;
+    transition: all .25s;
 }
 
 .hero__text {
@@ -80,6 +87,11 @@ header {
 .hero__img{
     align-self: flex-start;
     width:40%;
+    transition: all .25s;
+}
+
+.logo:hover, .hero__img:hover{
+    transform: scale(1.01);
 }
 
 p {
@@ -119,6 +131,9 @@ button:hover, .nav__link:hover{
     box-shadow: 0 .5em .5em -.4em #38CFD9;
 }
 
+.nav__link--button:hover{
+    border: 2px solid #FFF;
+}
 .row{
     display: flex;
     justify-content: space-between;
