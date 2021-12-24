@@ -43,7 +43,8 @@ img{
 header{
     background-color: #F3EED9;
     min-height: 66rem;
-    padding-top:15em;
+    display:flex;
+    align-items: center;
 }
 
 .header__subtitle{
