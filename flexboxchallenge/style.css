@@ -25,6 +25,7 @@ body {
     font-family: var(--ff-primary);
     font-size: var(--fs-small);
     margin: 0;
+    line-height: 1.6;
 }
 
 h1, h2, .header__subtitle{
@@ -37,7 +38,7 @@ img{
 
 .wrapper{
     width: 85%;
-    max-width: 1100px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -70,10 +71,6 @@ header{
     padding: 4rem 0;
 }
 
-.section__title{
-    padding: 1rem 0;
-}
-
 .section--black, .section--brown{
     color:var(--primary-clr);
 }
@@ -88,5 +85,30 @@ header{
 
 .section__title--accent{
     color: var(--secondary-clr);
+}
+
+@media (min-width: 700px){
+    .header__title{
+        font-size: var(--fs-big);
+    }
+
+    .row{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .section__img{
+       width:45%;
+    }
+
+    .section__text{
+        width:50%;
+    }
+
+    .column + .column{
+        margin-left: 5rem;
+    }
+  
 }
 
