@@ -7,6 +7,21 @@ html{
     font-size: 62.5%;
 }
 
+:root{
+    --primary-clr: #F3EED9;
+    --secondary-clr: 824936;
+    --tertiary-clr: #222C2A;
+
+    --fs-big: 6rem;
+    --fs-regular: 3.6rem;
+    --fs-small: 2.1 rem;
+    --fs-smallest: 1.8 rem;
+
+    --ff-primary: 'Roboto', sans-serif;
+    --ff-secondary: 'Playfair Display', serif;
+
+}
+
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
