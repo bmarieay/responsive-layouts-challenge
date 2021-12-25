@@ -1,0 +1,24 @@
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+:root{
+    --ff-primary: 'Montserrat', sans-serif;
+    --ff-secondary: 'Oswald', sans-serif;
+
+    --fs-big: 9rem;
+    --fs-medium: calc(var(--fs-big) / 2rem);
+    --fs-regular: 2.4rem;
+    --fs-primary: calc(var(var(--fs-regular) - .3rem));
+    --fs-small: 1.8rem;
+    --fs-smallest: 1.6rem;
+
+    --primary-clr: #3B4050;
+    --secondary-clr: #A59678;
+    --accent-clr: #A59678;
+}
