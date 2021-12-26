@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Final</title>
 </head>
 <body>
     <header>
         <div class="container row">
-            <a href="#home" class="logo"><img src="imgs/logo.svg" alt="Home button logo"></a>
-            <nav class="nav">
-                <ul class="nav__list">
+            <a href="#" class="logo column"><img src="imgs/logo.svg" alt="Home button logo"></a>
+            <nav class="nav column">
+                <ul class="nav__list nav___list--primary">
                     <li class="nav__item"><a href="#" class="nav__link">home</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">about</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">contact</a></li>
                 </ul>
             
-                <ul class="nav__list">
+                <ul class="nav__list nav__list--secondary">
                     <li class="nav__item"><a href="#" class="nav__link">sign in</a></li>
                     <li class="nav__item nav__item--button"><a href="#" class="nav__link">sign up</a></li>
                 </ul>
@@ -27,11 +29,13 @@
 
     <section class="hero">
         <div class="container">
-            <h1 id="hero__title">Responsive layouts</h1>
-            <div class="hero__description">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, obcaecati illum animi
-                    doloribus omnis voluptas nesciunt consequatur quam. Placeat, eum?</p>
-                <button>I want to learn</button>
+            <div class="hero__text">
+                <h1 id="hero__title">Responsive layouts <span class="accent">don't have to be a struggle</span></h1>
+                <div class="hero__description">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, obcaecati illum animi
+                        doloribus omnis voluptas nesciunt consequatur quam. Placeat, eum?</p>
+                    <button>I want to learn</button>
+                </div>
             </div>
         </div>
     </section>
@@ -39,22 +43,22 @@
     <main>
         <section class="section section--secondary">  
             <div class="container row">
-                <div class="column">
-                    <h2>Mobile-first</h2>
+                <div class="section__text column">
+                    <h2 class="section__title">Mobile-first</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet modi, voluptate qui quam 
                         eaque deserunt, ipsa placeat aperiam fuga labore nostrum similique, 
                         culpa in impedit dolorem ratione ad libero doloremque!</p>
                 </div>
 
-                <div class="column">
-                    <h2>Efficient</h2>
+                <div class="section__text column">
+                    <h2 class="section__title">Efficient</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet modi, voluptate qui quam 
                         eaque deserunt, ipsa placeat aperiam fuga labore nostrum similique, 
                         culpa in impedit dolorem ratione ad libero doloremque!</p>
                 </div>
 
-                <div class="column">
-                    <h2>Done right</h2>
+                <div class="section__text column">
+                    <h2 class="section__title">Done right</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet modi, voluptate qui quam 
                         eaque deserunt, ipsa placeat aperiam fuga labore nostrum similique, 
                         culpa in impedit dolorem ratione ad libero doloremque!</p>
@@ -62,10 +66,10 @@
             </div>    
         </section>
 
-        <secion class="section section--primary">
+        <section class="section section--primary">
             <div class="container row">
                 <article class="column">
-                    <h2>It doesn't have to be so hard</h2>
+                    <h2 class="section__title section__title--primary">It doesn't have to be so hard</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, aut qui? Illum odit 
                         laboriosam et ipsam sapiente amet dolorem, voluptate architecto 
                         non voluptatum, suscipit ducimus provident, numquam placeat ipsum hic!</p>
@@ -75,26 +79,20 @@
                         non voluptatum, suscipit ducimus provident, numquam placeat ipsum hic!</p>
                 </article>
 
-                <aside class="column">
-                    <section class="aside__title">
-                        <h3>Break it down</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, a quas 
-                            quam optio laborum quibusdam quos ratione quasi distinctio placeat suscipit 
-                            dolorum iure necessitatibus perspiciatis, aperiam asperiores maiores fugit itaque.</p>
+                <aside class="aside column">
+                    <section class="aside__text">
+                        <h3 class="aside__title">Break it down</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit cupiditate error perspiciatis dolor in similique.</p>
                     </section>
 
-                    <section class="aside__title">
-                        <h3>Work your way up</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, a quas 
-                            quam optio laborum quibusdam quos ratione quasi distinctio placeat suscipit 
-                            dolorum iure necessitatibus perspiciatis, aperiam asperiores maiores fugit itaque.</p>
+                    <section class="aside__text">
+                        <h3 class="aside__title">Work your way up</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit cupiditate error perspiciatis dolor in similique.</p>
                     </section>
 
-                    <section class="aside__title">
-                        <h3>Cheap</h3>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit, a quas 
-                            quam optio laborum quibusdam quos ratione quasi distinctio placeat suscipit 
-                            dolorum iure necessitatibus perspiciatis, aperiam asperiores maiores fugit itaque.</p>
+                    <section class="aside__text">
+                        <h3 class="aside__title">Cheap</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit cupiditate error perspiciatis dolor in similique.</p>
                     </section>
                 </aside>
             </div>
@@ -106,24 +104,24 @@
     <footer class="section">
         <div class="container">
             <h2 id="footer__title">just scratching the surface</h2>
-            <article class="footer__text row">
-                <section class="column">
-                    <h3 class="footer__subtitle">About our company</h3>
+            <article class="row">
+                <section class="footer__text--primary column">
+                    <h3 class="section__title section__title--small">About our company</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro similique quas
                         assumenda. Velit perspiciatis sint amet id cum? Deleniti, beatae.</p>
                 </section>
 
-                <section class="column">
-                    <h3>Getting around</h3>
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                <section class="footer__text column">
+                    <h3 class="section__title section__title--small">Getting started</h3>
+                    <ul>    
+                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>    
                         <li class="nav__item"><a href="#" class="nav__link">About</a></li>
                         <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
                     </ul>
                 </section>
 
-                <section class="column">
-                    <h3 class="footer__subtitle">Other things</h3>
+                <section class="footer__text column">
+                    <h3 class="section__title section__title--small">Other things</h3>
                     <ul>
                         <li>Lorem ipsum</li>
                         <li>dolor</li>
@@ -132,8 +130,8 @@
                     </ul>
                 </section>
 
-                <section class="column">
-                    <h3 class="footer__subtitle">Other things</h3>
+                <section class="footer__text column">
+                    <h3 class="section__title section__title--small">Other things</h3>
                     <ul>
                         <li>Lorem ipsum</li>
                         <li>dolor</li>
